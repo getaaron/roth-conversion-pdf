@@ -2,6 +2,8 @@
 
 This tool is for people who need to regularly perform Roth conversions. (For example, converting after-tax 401(k) balances to Roth balances each pay period.)
 
+It works by taking a mostly-completed PDF form, stamping the date on it, and printing it out.
+
 It's helpful for providers that still don't have a web form for these requests and require a printed and signed PDF to be scanned in.
 
 ## Prerequisites
@@ -9,6 +11,8 @@ It's helpful for providers that still don't have a web form for these requests a
 You should have python and ghostscript installed.
 
 If you don't have them, try [installing homebrew](https://brew.sh) then running `brew install python gs`.
+
+I think it might work on Linux but I only tested it on macOS.
 
 ## Usage
 
@@ -28,11 +32,11 @@ If all goes well, you'll now have a dated output file in the format `output-YYYY
 
 ## Configuration options
 
-If you want to customize the script
+If you want to customize the script's behavior, open `config.yml` in a text editor.
 
-Open `config.yml` in a text editor if you want to customize
+You can edit
 
-- `rect`: where the date prints on the date page
+- `rect`: where the date prints on the date page (this is a [pdfmark rect](https://www.google.com/search?q=pdfmark%20rect))
 - `date_page`: which page the date is on
 - `print_range`: the page range to send to your printer; blank if you don't want to print
 
