@@ -25,7 +25,7 @@ The input PDF should be completely filled out except for the date.
 Run the script:
 
 ```bash
-python add_date.py
+./add_date.py
 ```
 
 If all goes well, you'll now have a dated output file in the format `output-YYYY-MM-DD.pdf` and this will be printed to your printer. You can now sign the document, scan it, and upload it or mail it in.
