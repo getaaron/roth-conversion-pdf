@@ -32,5 +32,6 @@ with tempfile.NamedTemporaryFile(suffix='.pdf') as tempPdf:
   subprocess.run(['gs', '-dBATCH', '-dNOPAUSE', '-dQUIET', '-sDEVICE=pdfwrite', f'-sOutputFile={tempPdf.name}',  pdfMarkFile.name, 'input.pdf'])
   subprocess.run(['gs', '-dBATCH', '-dNOPAUSE', '-dQUIET', '-sDEVICE=pdfwrite', '-dPDFSETTINGS=/prepress', '-dPreserveAnnots=false', '-dCompatibilityLevel=1.4', f'-sOutputFile={output_file}', tempPdf.name])
 
-#subprocess.run(['lp', f'-o page-ranges={print_range}', f'-o media=A4', '-o fit-to-page', output_file])
+if print_range is not None:
+  subprocess.run(['lp', f'-o page-ranges={print_range}', f'-o media=A4', '-o fit-to-page', output_file])
 
