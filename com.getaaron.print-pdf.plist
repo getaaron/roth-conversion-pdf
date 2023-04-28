@@ -1,0 +1,22 @@
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.example.print-pdf</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python</string>
+        <string>/path/to/your/python/script.py</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Day</key>
+            <integer>15</integer>
+        </dict>
+        <dict>
+            <key>Day</key>
+            <integer>-1</integer>
+        </dict>
+    </array>
+</dict>
+</plist>

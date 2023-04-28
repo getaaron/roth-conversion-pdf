@@ -1,4 +1,14 @@
-MIT License
+# LICENSE
+
+## pdfmark in add_date.py
+
+The pdfmark string in the `add_date.py` script was partially adapted from Dr. Drang's [Automating the annotation of PDFs](https://leancrew.com/all-this/2021/12/automating-the-annotation-of-pdfs/) blog post.
+
+This is licensed under a [Creative Commons Attribution-Share Alike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
+
+## remaining work
+
+The remaining software in this repo is licensed under the MIT License:
 
 Copyright (c) 2023 Aaron Brager
 
