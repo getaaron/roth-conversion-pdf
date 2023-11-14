@@ -30,6 +30,14 @@ Run the script:
 
 If all goes well, you'll now have a dated output file in the format `output-YYYY-MM-DD.pdf` and this will be printed to your printer. You can now sign the document, scan it, and upload it or mail it in.
 
+### Printer Selection
+
+It will print to your default printer. You can change your default printer e.g.
+
+```bash
+lpoptions -d Brother_HL_L2325DW
+```
+
 ## Configuration options
 
 If you want to customize the script's behavior, open `config.yml` in a text editor.

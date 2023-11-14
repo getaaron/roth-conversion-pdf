@@ -1,5 +1,7 @@
 *.pdf
 .DS_Store
+bin/
+pyvenv.cfg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
